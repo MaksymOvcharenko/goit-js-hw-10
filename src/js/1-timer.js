@@ -16,7 +16,7 @@ const minutes = document.querySelector('[data-minutes]');
 const seconds = document.querySelector('[data-seconds]');
 const time = Date.now();
 let userSelectedDate = null;
-// btnTimerEl.setAttribute('disabled', '');
+btnTimerEl.setAttribute('disabled', '');
 const options = {
   enableTime: true,
   time_24hr: true,

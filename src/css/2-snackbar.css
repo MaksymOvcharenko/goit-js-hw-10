@@ -1,3 +1,67 @@
-.snackbar {
-  background-color: aquamarine;
+.form {
+  padding-top: 100px;
+  margin: 0 auto;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+.form label {
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  padding-left: 14px;
+  padding-right: 14px;
+  height: 40px;
+}
+.form input:hover {
+  border: 1px solid #000000;
+}
+.form input:focus {
+  border: 1px solid #4e75ff;
+}
+.form fieldset {
+  height: 64px;
+}
+.form fieldset:hover,
+.form fieldset:focus {
+  border: 1px solid #000000;
+}
+.form input,
+.form fieldset {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  justify-content: center;
+  margin: 0;
+  /* margin-bottom: 24px; */
+}
+
+.form fieldset label {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  align-items: center;
+}
+.form button {
+  margin-top: 24px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4e75ff;
+  font-weight: 500;
+  color: #ffffff;
+}
+.form button:hover {
+  background: #6c8cff;
 }
