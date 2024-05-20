@@ -29,6 +29,7 @@ const options = {
       iziToast.error({
         title: 'Error',
         message: 'Illegal operation',
+        position: 'topRight',
       });
       btnTimerEl.setAttribute('disabled', '');
     } else {
