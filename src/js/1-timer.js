@@ -14,7 +14,8 @@ const days = document.querySelector('[data-days]');
 const hours = document.querySelector('[data-hours]');
 const minutes = document.querySelector('[data-minutes]');
 const seconds = document.querySelector('[data-seconds]');
-const time = Date.now();
+let time = null;
+
 let userSelectedDate = null;
 btnTimerEl.setAttribute('disabled', '');
 const options = {
@@ -24,11 +25,11 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     userSelectedDate = selectedDates[0];
+    time = Date.now();
 
     if (userSelectedDate < time) {
       iziToast.error({
-        title: 'Error',
-        message: 'Illegal operation',
+        message: 'Будь ласка, оберіть дату в майбутньому',
         position: 'topRight',
       });
       btnTimerEl.setAttribute('disabled', '');
